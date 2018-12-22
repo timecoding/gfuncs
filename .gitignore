@@ -1,2 +1,4 @@
 *.swp
 *.sublime-*
+/docs
+/node_modules

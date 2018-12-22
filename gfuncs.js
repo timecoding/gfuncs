@@ -1,5 +1,13 @@
+/**
+ * @overview Библиотека часто используемых функций для gulp.
+ */
+
 const fs = require("fs");
 
+/**
+ * Текущее время
+ * @return {string} - текущее время в формате hh:mm:ss
+ */
 function time() {
 	let locale = process.env.LANGUAGE.replace("_", "-");
 	let options = {
@@ -12,6 +20,11 @@ function time() {
 	return "[" + new Date().toLocaleString(locale, options) + "]";
 }
 
+/**
+ * Рекурсивная очистка директории
+ * @param {string} path - путь к директории
+ * @param {string} [msg] - сообщение для печати после очистки директории
+ */
 const clean = function clr(path, msg) {
 	let files;
 	try {
