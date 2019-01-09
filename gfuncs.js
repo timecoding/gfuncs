@@ -23,7 +23,7 @@ function time () {
 /**
  * Рекурсивная очистка директории
  * @param {string} path - путь к директории
- * @param {string} [msg] - сообщение для печати после очистки директории
+ * @param {string} [msg] - сообщение после очистки директории
  */
 const clean = function clr (path, msg) {
   let files;
